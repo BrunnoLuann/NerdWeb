@@ -1,0 +1,862 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/all.min.css">
+    <link href="https://fonts.cdnfonts.com/css/archer-book" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+    <title>Nerdweb</title>
+</head>
+
+<body>
+    <header>
+        <div class="container-header-left">
+            <div class="container-header-left-logo">
+                <img class="logo-header" src="/images/logo@2x.png" alt="logo-header-nerdweb">
+            </div>
+            <div class="container-header-left-menu">
+                <ul class="list-menu-header">
+                    <li class="list-menu-header-item">
+                        <a href="#about">Nerdweb</a>
+                    </li>
+                    <li class="list-menu-header-item">
+                        <a href="#services">Serviços</a>
+                    </li>
+                    <li class="list-menu-header-item">
+                        <a href="#">Blog</a>
+                    </li>
+                    <li class="list-menu-header-item">
+                        <a href="#footer">Atendimento</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="container-header-right">
+            <div class="container-header-right-day-to-day">
+                <div class="container-header-right-day-to-day-text">
+                    DIA A DIA
+                </div>
+                <i class="fa-solid fa-caret-down"></i>
+            </div>
+            <div class="container-header-right-day-to-day-icons">
+                <img class="imagem-user-icon" src="/images/account_circle_black_24dp@2x.png" alt="image-userlogo">
+                <img class="image-cart-icon" src="/images/shopping_cart_black_24dp@2x.png" alt="image-cart">
+                <div class="container-imagem-user">
+                    <i class="fa-solid fa-bars image-menu"></i>
+                </div>
+            </div>
+        </div>
+
+    </header>
+    <div class="container-menu">
+        <div class="container-menu-items">
+            <div class="container-menu-items-sites" onclick="clickSites()">
+                <div class="container-menu-items-sites-text">
+                    SITES
+                </div>
+                <i id="icon-sites" class="fa-solid fa-caret-down icon-down-click"></i>
+            </div>
+            <div class="container-menu-items-social-network">
+                REDES SOCIAIS
+            </div>
+            <div class="container-menu-items-ecommerce">
+                E-COMMERCE
+            </div>
+            <div class="container-menu-items-online-midia">
+                MÍDIA ONLINE
+            </div>
+            <div class="container-menu-items-landing-pages">
+                LANDING PAGES
+            </div>
+        </div>
+        <div class="container-menu-search">
+            <div class="container-menu-search-items">
+                <input class="input-search" type="text" name="input-search" value="Digite sua pesquisa">
+                <div class="container-icon-search">
+                    <i class="fa-solid fa-magnifying-glass icon-search"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-banner">
+        <div class="container-banner-submenu" id="container-submenu">
+            <div class="content-submenu">
+                <div class="content-submenu-item">
+                    <div class="content-submenu-item-title">
+                        Soluções</br>
+                        Site
+                    </div>
+                    <div class="content-submenu-item-list">
+                        <ul class="list-submenu">
+                            <li class="item-submenu">Briefing</li>
+                            <li class="item-submenu">Pesquisa</li>
+                            <li class="item-submenu">Criação</li>
+                            <li class="item-submenu">Veiculação</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="content-submenu-item">
+                    <div class="content-submenu-item-title">
+                        Soluções por</br>
+                        E-commerce
+                    </div>
+                    <div class="content-submenu-item-list">
+                        <ul class="list-submenu">
+                            <li class="item-submenu-light">Lorem</li>
+                            <li class="item-submenu-light">Ipsum</li>
+                            <li class="item-submenu-light">Dolor</li>
+                            <li class="item-submenu-light">Google ads</li>
+                            <li class="item-submenu-light">Análise de mercado</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="content-submenu-item">
+                    <div class="content-submenu-item-title">
+                        Soluções por</br>
+                        Redes Sociais
+                    </div>
+                    <div class="content-submenu-item-list">
+                        <ul class="list-submenu">
+                            <li class="item-submenu-light">Briefing</li>
+                            <li class="item-submenu-light">Pesquisa</li>
+                            <li class="item-submenu-light">Criação</li>
+                            <li class="item-submenu-light">Veiculação</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="content-submenu-item">
+                    <div class="content-submenu-item-title">
+                        Soluções por</br>
+                        Landing Page
+                    </div>
+                    <div class="content-submenu-item-list">
+                        <ul class="list-submenu">
+                            <li class="item-submenu-light">Conteúdo</li>
+                            <li class="item-submenu-light">Relatórios</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <main>
+        <!-- COMPONENTE DESCUBRA OS SERVIÇOS QUANDO RESOLUÇÃO MENOR -->
+        <div class="container-findout-app" id="services-app">
+            <div class="container-findout-app-title">
+                Descubra os serviços</br>
+                Nerdweb <span class="color-secondary">mais combinam</br>
+                    com a sua empresa</span>
+            </div>
+            <div class="horizontal-separator">
+                <div class="border-left"></div>
+                <div class="border-right"></div>
+            </div>
+            <div class="container-services-app-main">
+                <div class="swiper swiper-services-app">
+                    <div class="swiper-wrapper">
+                        <div class="card-services-app swiper-slide">
+                            <div class="container-services-app-main-image">
+                                <img class="image-service-app" src="/images/alt_route_black_24dp.svg" alt="image-route">
+                            </div>
+                            <div class="container-services-app-main-title">
+                                Título
+                            </div>
+                            <div class="container-services-app-main-description">
+                                Dolor sit amet, consetetur sadipscing elitr, sed
+                            </div>
+                        </div>
+                        <div class="card-services-app swiper-slide">
+                            <div class="container-services-app-main-image">
+                                <img class="image-service-app" src="/images/headset_mic_black_24dp.svg"
+                                    alt="image-headset">
+                            </div>
+                            <div class="container-services-app-main-title">
+                                Serviço
+                            </div>
+                            <div class="container-services-app-main-description">
+                                Lorem ipsum dolor sit amet, consetetur sadipscing
+                            </div>
+                        </div>
+                        <div class="card-services-app swiper-slide">
+                            <div class="container-services-app-main-image">
+                                <img class="image-service-app" src="/images/inventory_black_24dp.svg"
+                                    alt="image-inventory">
+                            </div>
+                            <div class="container-services-app-main-title">
+                                Exemplo
+                            </div>
+                            <div class="container-services-app-main-description">
+                                Ipsum dolor sit amet, consetetur sadipscing elitr.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+
+                </div>
+
+            </div>
+            <div class="container-findout-app-button">
+                VER SERVIÇOS
+            </div>
+        </div>
+        <!-- COMPONENTE DESCUBRA OS SERVIÇOS QUANDO RESOLUÇÃO MAIOR -->
+        <div class="container-findout" id="services">
+            <div class="container-findoutheader">
+                <div class="click-left">
+                    <i class="fa-solid fa-angle-left"></i>
+                </div>
+                <div class="click-right">
+                    <i class="fa-solid fa-angle-right"></i>
+                </div>
+            </div>
+            <div class="container-findoutmain">
+                <div class="container-findout-text">
+                    <div>
+                        <p class="text-services">
+                            <span class="color-dark">
+                                Descubra os </br>
+                                serviços Nerdweb </br>
+                            </span>
+                            <span class="color-blue">
+                                que mais combinam </br>
+                                com a sua empresa
+                            </span>
+                        </p>
+                        <button class="button-seeservices">
+                            VER SERVIÇOS
+                        </button>
+                    </div>
+                    <div class="separator">
+                        <div class="border-top"></div>
+                        <div class="border-bottom"></div>
+                    </div>
+                </div>
+                <div class="container-findout-services">
+                    <div class="swiper swiper-services">
+                        <div class="swiper-wrapper">
+                            <div class="card-service swiper-slide">
+                                <div class="card-service-image">
+                                    <img class="image-service" src="/images/alt_route_black_24dp.svg" alt="image-route">
+                                </div>
+                                <div class="card-service-title">
+                                    Título
+                                </div>
+                                <div class="card-service-description">
+                                    Dolor sit amet, consetetur sadipscing elitr, sed
+                                </div>
+                            </div>
+                            <div class="card-service swiper-slide">
+                                <div class="card-service-image">
+                                    <img class="image-service" src="/images/headset_mic_black_24dp.svg"
+                                        alt="image-headset">
+                                </div>
+                                <div class="card-service-title">
+                                    Serviço
+                                </div>
+                                <div class="card-service-description">
+                                    Lorem ipsum dolor sit amet, consetetur sadipscing
+                                </div>
+                            </div>
+                            <div class="card-service swiper-slide">
+                                <div class="card-service-image">
+                                    <img class="image-service" src="/images/inventory_black_24dp.svg"
+                                        alt="image-inventory">
+                                </div>
+                                <div class="card-service-title">
+                                    Exemplo
+                                </div>
+                                <div class="card-service-description">
+                                    Ipsum dolor sit amet, consetetur sadipscing elitr.
+                                </div>
+                            </div>
+                            <div class="card-service swiper-slide">
+                                <div class="card-service-image">
+                                    <img class="image-service" src="/images/alt_route_black_24dp.svg" alt="image-route">
+                                </div>
+                                <div class="card-service-title">
+                                    Título
+                                </div>
+                                <div class="card-service-description">
+                                    Dolor sit amet, consetetur sadipscing elitr, sed
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="container-products">
+            <div class="container-products-title">
+                <span class="color-dark">
+                    Conheça todos
+                </span>
+                <span class="color-blue">
+                    produtos Nerdweb
+                </span>
+            </div>
+            <div class="container-products-cards">
+                <div class="swiper swiper-products">
+                    <div class="swiper-wrapper">
+                        <!-- Slides -->
+                        <div class="card-product swiper-slide">
+                            <div class="container-image-product">
+                                <img class="image-product" src="/images/LAPTOP@2x.png" alt="image-laptop">
+                            </div>
+                            <div class="title-product">
+                                SITES
+                            </div>
+                        </div>
+                        <div class="card-product swiper-slide">
+                            <div class="container-image-product">
+                                <img class="image-product" src="/images/PHONE@2x.png" alt="image-phone">
+                            </div>
+                            <div class="title-product">
+                                E-COMMERCE
+                            </div>
+                        </div>
+                        <div class="card-product swiper-slide">
+                            <div class="container-image-product">
+                                <img class="image-product" src="/images/SHOP@2x.png" alt="image-shop">
+                            </div>
+                            <div class="title-product">
+                                REDES
+                            </div>
+                        </div>
+                        <div class="card-product swiper-slide">
+                            <div class="container-image-product">
+                                <img class="image-product" src="/images/LAPTOP@2x.png" alt="image-laptop">
+                            </div>
+                            <div class="title-product">
+                                SITES
+                            </div>
+                        </div>
+                        <div class="card-product swiper-slide">
+                            <div class="container-image-product">
+                                <img class="image-product" src="/images/PHONE@2x.png" alt="image-phone">
+                            </div>
+                            <div class="title-product">
+                                E-COMMERCE
+                            </div>
+                        </div>
+                        <div class="card-product swiper-slide">
+                            <div class="container-image-product">
+                                <img class="image-product" src="/images/SHOP@2x.png" alt="image-shop">
+                            </div>
+                            <div class="title-product">
+                                REDES
+                            </div>
+                        </div>
+                        <div class="card-product swiper-slide">
+                            <div class="container-image-product">
+                                <img class="image-product" src="/images/LAPTOP@2x.png" alt="image-laptop">
+                            </div>
+                            <div class="title-product">
+                                SITES
+                            </div>
+                        </div>
+                        <div class="card-product swiper-slide">
+                            <div class="container-image-product">
+                                <img class="image-product" src="/images/PHONE@2x.png" alt="image-phone">
+                            </div>
+                            <div class="title-product">
+                                E-COMMERCE
+                            </div>
+                        </div>
+                        <div class="card-product swiper-slide">
+                            <div class="container-image-product">
+                                <img class="image-product" src="/images/SHOP@2x.png" alt="image-shop">
+                            </div>
+                            <div class="title-product">
+                                REDES
+                            </div>
+                        </div>
+                        <div class="card-product swiper-slide">
+                            <div class="container-image-product">
+                                <img class="image-product" src="/images/LAPTOP@2x.png" alt="image-laptop">
+                            </div>
+                            <div class="title-product">
+                                SITES
+                            </div>
+                        </div>
+                        <div class="card-product swiper-slide">
+                            <div class="container-image-product">
+                                <img class="image-product" src="/images/PHONE@2x.png" alt="image-phone">
+                            </div>
+                            <div class="title-product">
+                                E-COMMERCE
+                            </div>
+                        </div>
+                        <div class="card-product swiper-slide">
+                            <div class="container-image-product">
+                                <img class="image-product" src="/images/SHOP@2x.png" alt="image-shop">
+                            </div>
+                            <div class="title-product">
+                                REDES
+                            </div>
+                        </div>
+                        <div class="card-product swiper-slide">
+                            <div class="container-image-product">
+                                <img class="image-product" src="/images/LAPTOP@2x.png" alt="image-laptop">
+                            </div>
+                            <div class="title-product">
+                                SITES
+                            </div>
+                        </div>
+                        <div class="card-product swiper-slide">
+                            <div class="container-image-product">
+                                <img class="image-product" src="/images/PHONE@2x.png" alt="image-phone">
+                            </div>
+                            <div class="title-product">
+                                E-COMMERCE
+                            </div>
+                        </div>
+                        <div class="card-product swiper-slide">
+                            <div class="container-image-product">
+                                <img class="image-product" src="/images/SHOP@2x.png" alt="image-shop">
+                            </div>
+                            <div class="title-product">
+                                REDES
+                            </div>
+                        </div>
+                        <div class="card-product swiper-slide">
+                            <div class="container-image-product">
+                                <img class="image-product" src="/images/LAPTOP@2x.png" alt="image-laptop">
+                            </div>
+                            <div class="title-product">
+                                SITES
+                            </div>
+                        </div>
+                        <div class="card-product swiper-slide">
+                            <div class="container-image-product">
+                                <img class="image-product" src="/images/PHONE@2x.png" alt="image-phone">
+                            </div>
+                            <div class="title-product">
+                                E-COMMERCE
+                            </div>
+                        </div>
+                        <div class="card-product swiper-slide">
+                            <div class="container-image-product">
+                                <img class="image-product" src="/images/SHOP@2x.png" alt="image-shop">
+                            </div>
+                            <div class="title-product">
+                                REDES
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="swiper-scrollbar"></div>
+
+                </div>
+            </div>
+            <div class="container-products-button">
+                <button class="button-all-products">
+                    Ver todos os produtos
+                </button>
+            </div>
+        </div>
+        <div class="container-work-withus">
+            <div class="container-work-withus-text">
+                <div class="container-work-withus-text-title">
+                    Faça parte do nosso time de nerds
+                </div>
+                <div class="container-work-withus-text-description">
+                    Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut
+                    labore et dolore magna aliquyam erat, sed diam voluptua.
+                </div>
+                <div class="container-work-withus-text-button">
+                    <button class="button-register">cadastre-se</button>
+                </div>
+            </div>
+            <div>
+
+            </div>
+        </div>
+        <!-- CONTAINER SELECAO DE SERVICO PARA RESOLUÇÃO MENOR : -->
+        <div class="container-services-selection-app">
+            <div class="container-services-selection-app-title">
+                <span class="title-services-selection-app">
+                    Seleção de Serviços
+                </span>
+                <span class="subtitle-services-selection-app">
+                    Conheça nossa seleção especial
+                </span>
+            </div>
+            <div class="container-services-selection-app-cards">
+                <div class="swiper swiper-selecion-services-app">
+                    <div class="swiper-wrapper">
+                        <div class="card-service-selection-app swiper-slide">
+                            <div class="card-service-selection-app-image">
+                                <img class="imagem-service-selection-app" src="/images/Imagem card serviço.png" alt="">
+                            </div>
+                            <div class="card-service-selection-app-texts">
+                                <div class="card-service-selection-app-title">
+                                    Serviço de teste de front-end
+                                </div>
+                                <div class="card-service-selection-app-description">
+                                    Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
+                                    tempor invidunt ut labore et dolore magna
+                                </div>
+                                <div class="card-service-selection-app-know">
+                                    Conhecer
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-service-selection-app swiper-slide">
+                            <div class="card-service-selection-app-image">
+                                <img class="imagem-service-selection-app" src="/images/Imagem card serviço02.png"
+                                    alt="">
+                            </div>
+                            <div class="card-service-selection-app-texts">
+                                <div class="card-service-selection-app-title">
+                                    Serviço de teste de front-end
+                                </div>
+                                <div class="card-service-selection-app-description">
+                                    Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
+                                    tempor invidunt ut labore et dolore magna
+                                </div>
+                                <div class="card-service-selection-app-know">
+                                    Conhecer
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-service-selection-app swiper-slide">
+                            <div class="card-service-selection-app-image">
+                                <img class="imagem-service-selection-app" src="/images/Imagem card serviço03.png"
+                                    alt="">
+                            </div>
+                            <div class="card-service-selection-app-texts">
+                                <div class="card-service-selection-app-title">
+                                    Serviço de teste de front-end
+                                </div>
+                                <div class="card-service-selection-app-description">
+                                    Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
+                                    tempor invidunt ut labore et dolore magna
+                                </div>
+                                <div class="card-service-selection-app-know">
+                                    Conhecer
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-scrollbar"></div>
+                </div>
+
+            </div>
+        </div>
+        <!-- CONTAINER SELECAO DE SERVICO PARA RESOLUÇÃO MAIOR : -->
+        <div class="container-services-selection">
+            <div class="container-services-selection-title">
+                <span class="title-services-selection">
+                    Seleção de Serviços
+                </span>
+                <span class="subtitle-services-selection">
+                    Conheça nossa seleção especial
+                </span>
+            </div>
+            <div class="container-services-selection-cards">
+                <div class="card-service-selection">
+                    <div class="card-service-selection-image">
+                        <img class="imagem-service-selection" src="/images/Imagem card serviço@2x.png" alt="">
+                    </div>
+                    <div class="card-service-selection-texts">
+                        <div class="card-service-selection-title">
+                            Serviço de teste de front-end
+                        </div>
+                        <div class="card-service-selection-description">
+                            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor
+                            invidunt ut labore et dolore magna
+                        </div>
+                        <div class="card-service-selection-know">
+                            Conhecer
+                        </div>
+                    </div>
+                </div>
+                <div class="card-service-selection">
+                    <div class="card-service-selection-image">
+                        <img class="imagem-service-selection" src="/images/Imagem card serviço@2x_02.png" alt="">
+                    </div>
+                    <div class="card-service-selection-texts">
+                        <div class="card-service-selection-title">
+                            Serviço de teste de front-end
+                        </div>
+                        <div class="card-service-selection-description">
+                            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor
+                            invidunt ut labore et dolore magna
+                        </div>
+                        <div class="card-service-selection-know">
+                            Conhecer
+                        </div>
+                    </div>
+                </div>
+                <div class="card-service-selection">
+                    <div class="card-service-selection-image">
+                        <img class="imagem-service-selection" src="/images/Imagem card serviço@2x_03.png" alt="">
+                    </div>
+                    <div class="card-service-selection-texts">
+                        <div class="card-service-selection-title">
+                            Serviço de teste de front-end
+                        </div>
+                        <div class="card-service-selection-description">
+                            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor
+                            invidunt ut labore et dolore magna
+                        </div>
+                        <div class="card-service-selection-know">
+                            Conhecer
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container-about" id="about">
+            <div class="container-about-texts">
+                <div class="container-about-title">
+                    Conheça a visão Nerdweb e entenda nossa história
+                </div>
+                <div class="container-about-description">
+                    Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor
+                </div>
+                <div class="container-about-button">
+                    <button class="button-about">ir para sobre</button>
+                </div>
+            </div>
+            <div></div>
+        </div>
+        <div class="horizontal-separator">
+            <div class="border-left"></div>
+            <div class="border-right"></div>
+        </div>
+        <div class="container-certificates">
+            <div class="content-certificates-descriptions">
+                <div class="content-certificates-descriptions-title">
+                    Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut
+                    labore et dolore magna aliquyam
+                </div>
+                <div class="content-certificates-descriptions-description">
+                    Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut
+                    labore et dolore magna aliquyam erat, sed diam voluptua.
+                    <span style="color: #2C3A2F;">At vero eos et accusam et justo duo dolores et ea rebum.
+                        Stet clita kasd gubergren,</span> no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem
+                    ipsum dolor sit amet, consetetur
+                    <span style="color: #2C3A2F;"> sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et
+                        dolore magna aliquyam erat, sed diam </span>voluptua. At vero eos et accusam et.
+                </div>
+            </div>
+            <div class="content-certificates-images">
+                <img class="image-certificates" src="/images/selo-wgc@2x.png" alt="image-selowgc">
+                <img class="image-certificates" src="/images/principle-2@2x.png" alt="image-vegano">
+                <img class="image-certificates" src="/images/principle-3@2x.png" alt="image-organico">
+            </div>
+        </div>
+        <div class="container-news">
+            <div class="container-news-texts">
+                <div class="container-news-texts-title">
+                    Novidades e descontos especiais
+                </div>
+                <div class="container-news-texts-description">
+                    Descubra com a gente uma vida nova, saudável, cheia de sabor e desconto!
+                </div>
+            </div>
+            <div class="container-news-register">
+                <input class="input-register" type="text" name="name" value="Nome">
+                <input class="input-register" type="email" name="name" value="E-mail">
+                <button class="button-register-news">cadastrar</button>
+            </div>
+        </div>
+    </main>
+    <footer id="footer">
+        <div class="footer-main">
+            <div class="container-footer-main-logo">
+                <img class="image-logo" src="/images/Grupo 549@2x.png" alt="logo-nerdweb">
+            </div>
+            <div class="container-footer-main-nerdweb">
+                <div class="container-footer-main-nerdweb-title">
+                    NERDWEB
+                </div>
+                <div class="container-footer-main-nerdweb-list">
+                    <ul class="list-main-nerdweb">
+                        <li class="item-list-main">Sobre</li>
+                        <li class="item-list-main">Nossos Princípios</li>
+                        <li class="item-list-main">Funcionários</li>
+                        <li class="item-list-main">Trabalhe Conosco</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="container-footer-main-help">
+                <div class="container-footer-main-nerdweb-title">
+                    AJUDA
+                </div>
+                <div class="container-footer-main-nerdweb-list">
+                    <ul class="list-main-nerdweb">
+                        <li class="item-list-main">Prazos e Entregas</li>
+                        <li class="item-list-main">Troca e Devoluções</li>
+                        <li class="item-list-main">Políticas de Privacidade</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="container-footer-main-attendance">
+                <div class="container-footer-main-nerdweb-title">
+                    ATENDIMENTO
+                </div>
+                <div class="container-footer-main-nerdweb-list">
+                    <ul class="list-main-nerdweb">
+                        <li class="item-list-main">Dúvidas Frequentes</li>
+                        <li class="item-list-main">(41) 3333-3333</li>
+                        <li class="item-list-main">teste@nerdweb.com.br</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="container-footer-main-time">
+                <div class="container-footer-main-nerdweb-title">
+                    HORÁRIO DE ATENDIMENTO
+                </div>
+                <div class="container-footer-main-nerdweb-text">
+                    De segunda a sexta-feira </br>
+                    das 08h00 às 12h00 </br>
+                    e das 13h00 às 17h40
+                </div>
+            </div>
+        </div>
+        <div class="container-footer-secondary">
+            <div class="container-footer-secondary-text">
+                2022 Nerdweb - Extreme Hosting, todos os direitos reservados.
+            </div>
+            <div class="container-footer-secondary-socialmedia">
+                <div class="container-footer-secondary-socialmedia-text">
+                    Fique em sintonia com a gente
+                </div>
+                <div class="container-footer-secondary-socialmedia-icons">
+                    <a class="link-socialmedia" href="https://pt-br.facebook.com/nerdwebsolucoes/" target="_blank">
+                        <i class="fa-brands fa-facebook icon-socialmedia"></i>
+                    </a>
+                    <a class="link-socialmedia" href="https://www.instagram.com/nerdweb/" target="_blank">
+                        <i class="fa-brands fa-instagram icon-socialmedia"></i>
+                    </a>
+                    <a class="link-socialmedia" href="https://www.linkedin.com/company/nerdweb/" target="_blank">
+                        <i class="fa-brands fa-linkedin-in icon-socialmedia"></i>
+                    </a>
+                    <a class="link-socialmedia" href="https://twitter.com/?lang=pt-br" target="_blank">
+                        <i class="fa-brands fa-twitter icon-socialmedia"></i>
+                    </a>
+                    <a class="link-socialmedia" href="https://www.youtube.com/?hl=pt" target="_blank">
+                        <i class="fa-brands fa-youtube icon-socialmedia"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="/Js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script>
+        const widthScreen = window.innerWidth;
+        console.log('widthScreen = ', widthScreen);
+        let width = 8
+        if (widthScreen <= 1024) {
+            width = 2;
+        }
+        console.log('width', width)
+        const swiper = new Swiper('.swiper-products', {
+
+            direction: 'horizontal',
+            loop: false,
+
+            slidesPerView: width,
+            spaceBetween: 15,
+
+
+            pagination: {
+                el: '.swiper-pagination',
+            },
+
+
+            scrollbar: {
+                el: '.swiper-scrollbar',
+            },
+        });
+    </script>
+    <script>
+        const swiperServices = new Swiper('.swiper-services', {
+
+            direction: 'horizontal',
+            loop: false,
+
+            slidesPerView: 3,
+            spaceBetween: 15,
+            slidesPerGroup: 3,
+
+
+            pagination: {
+                el: '.swiper-pagination',
+            },
+
+
+            navigation: {
+                nextEl: '.click-right',
+                prevEl: '.click-left',
+            },
+
+
+        });
+
+        const swiperServicesApp = new Swiper('.swiper-services-app', {
+
+            direction: 'horizontal',
+            loop: false,
+
+            slidesPerView: 1,
+            spaceBetween: 15,
+            slidesPerGroup: 1,
+
+
+            pagination: {
+                el: '.swiper-pagination',
+            },
+
+
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+
+
+        });
+
+
+        const swiperSelectionServicesApp = new Swiper('.swiper-selecion-services-app', {
+
+            direction: 'horizontal',
+            loop: false,
+
+            slidesPerView: 1,
+            spaceBetween: 15,
+            slidesPerGroup: 1,
+
+
+            pagination: {
+                el: '.swiper-pagination',
+            },
+
+            scrollbar: {
+                el: '.swiper-scrollbar',
+            },
+        });
+
+    </script>
+
+    </script>
+
+
+
+</body>
+
+</html>
