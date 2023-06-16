@@ -11,8 +11,12 @@ Git Clone git@github.com:BrunnoLuann/NerdWeb.git
 <li>
 Execute o arquivo Index.html
 </li>
-
-
+<li>
+Link do site online a baixo
+</li
+<li>
+bashful-push.surge.sh
+</li
 ## Critérios de Avaliação
 
 <li>
