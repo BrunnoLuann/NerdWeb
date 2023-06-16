@@ -16,9 +16,10 @@ Link do site online a baixo
 </li
 <li>
 bashful-push.surge.sh
-</li
-## Critérios de Avaliação
+</li>
 
+  
+## Critérios de Avaliação
 <li>
 Responsividade: seu layout deve ser capaz de se adaptar adequadamente a diferentes resoluções e dispositivos.
 </li>
